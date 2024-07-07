@@ -38,7 +38,7 @@ defmodule Slime.Mixfile do
 
   def package do
     [
-      maintainers: ["Sean Callan", "Alexander Stanko"],
+      maintainers: ["Sean Callan", "Alexander Stanko", "Tyler Cinnamon"],
       files: [
         "lib",
         "tasks",
@@ -50,7 +50,7 @@ defmodule Slime.Mixfile do
         "CHANGELOG*"
       ],
       licenses: ["MIT"],
-      links: %{github: "https://github.com/slime-lang/slime"}
+      links: %{github: "https://github.com/skotchpine/slime"}
     ]
   end
 
@@ -68,7 +68,7 @@ defmodule Slime.Mixfile do
       {:credo, ">= 0.0.0", only: [:dev, :test]},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       # HTML generation helpers
-      {:phoenix_html, "~> 2.14", only: :test}
+      {:phoenix_html, "~> 4.0", only: :test}
     ]
   end
 end
